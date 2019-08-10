@@ -8,6 +8,10 @@
     "build": "webpack-cli",
     "test": "jest"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Kagashino/vue-exact-router-view.git"
+  },
   "keywords": [
     "vue-router",
     "plugin"
