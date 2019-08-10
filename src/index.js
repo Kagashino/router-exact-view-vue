@@ -1,3 +1,5 @@
+import config from '../package.json'
+
 export const ExactRouterView = {
   name: 'exact-router-view',
   props: {
@@ -14,7 +16,7 @@ export const ExactRouterView = {
 
 export default {
   name: 'ExactRouterView',
-  version: '1.0.0',
+  version: config.version,
   install (V) {
     const routerInstalled = V._installedPlugins.filter(plugin=>plugin.name === 'VueRouter').length
     if ( !routerInstalled ) {
