@@ -5,6 +5,7 @@
   "main": "dist/index.js",
   "module": "dist/index.js",
   "scripts": {
+    "prepublish": "npm run test && npm run build",
     "build": "webpack-cli",
     "test": "jest"
   },
