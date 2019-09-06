@@ -18,13 +18,6 @@ export default {
   name: 'ExactRouterView',
   version: config.version,
   install (V) {
-    const routerInstalled = V._installedPlugins.filter(plugin=>plugin.name === 'VueRouter').length
-    if ( !routerInstalled ) {
-      if ( process.env.NODE_ENV !== 'production' ) {
-        throw Error('missing dependency: \'VueRouter\', make sure that vue-router was installed.')
-      }
-      return;
-    }
     V.component('exact-router-view', ExactRouterView)
   }
 }
